@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  Static
+//
+//  Created by evilpenguin
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Defines
+#import "Defines.h"
+
+// Categories
+#import "NSObject+Static.h"
+#import "NSString+Static.h"
+#import "NSData+Static.h"
+#import "NSArray+Static.h"
+#import "NSTask+Static.h"
+
+// Tools
+#import "ExternalTools.h"
+
+#endif /* PrefixHeader_pch */
