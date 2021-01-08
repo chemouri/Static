@@ -10,11 +10,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ArtifactWord : NSObject<Artifact>
-@property (nonatomic, strong) NSString *word;
+@property (nonatomic, strong) NSString *line;
 @property (nonatomic, strong) NSString *callout;
 @property (nonatomic, strong) NSString *foundWord;
 @property (nonatomic, strong) NSString *range;
-@property (nonatomic, strong) NSNumber *line;
+@property (nonatomic, strong) NSNumber *lineNumber;
 
 @end
 

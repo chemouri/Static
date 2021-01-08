@@ -21,7 +21,7 @@
 
 + (id<Artifact>) artifactFromDictionary:(NSDictionary<NSString *,id> *)dictionary {
     ArtifactWord *artifact = [[ArtifactWord alloc] init];
-    artifact.word = dictionary[@""];
+    artifact.line = dictionary[@""];
     artifact.callout = dictionary[@""];
     artifact.foundWord = dictionary[@""];
     artifact.range = dictionary[@""];
@@ -32,11 +32,12 @@
 
 - (NSDictionary<NSString *,id> *)dictionary {
     NSMutableDictionary<NSString *, id> *dictionary = [NSMutableDictionary dictionary];
-    dictionary[@"word"] = self.word;
+    dictionary[@"line"] = self.line;
     dictionary[@"callout"] = self.callout;
     dictionary[@"found_word"] = self.foundWord;
     dictionary[@"range"] = self.range;
     dictionary[@"line"] = self.line;
+    dictionary[@"line_number"] = self.lineNumber;
     
     return dictionary; // should be a copy shhh :)
 }

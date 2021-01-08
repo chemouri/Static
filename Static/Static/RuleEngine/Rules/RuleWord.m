@@ -27,7 +27,7 @@
                     if ([extension isEqualToString:pathExtension]) {
                         ArtifactWord *artifact = [[ArtifactWord alloc] init];
                         artifact.foundWord = extension;
-                        artifact.word = string;
+                        artifact.line = string;
                         
                         [containsWords addObject:artifact];
                         break;
@@ -48,9 +48,9 @@
                             if (wordRange.location != NSNotFound) {
                                 ArtifactWord *artifact = [[ArtifactWord alloc] init];
                                 artifact.foundWord = checkingWord;
-                                artifact.word = word;
+                                artifact.line = word;
                                 artifact.range = NSStringFromRange(wordRange);
-                                artifact.line = @(i + 1);
+                                artifact.lineNumber = @(i + 1);
 
                                 [containsWords addObject:artifact];
                             }

@@ -40,9 +40,9 @@ JSON Output
         "path" : "Payload/App.app/SomeFile.strings",
         "words" : [
           {
-            "word" : "<key>debug</key>",
+            "line" : "<key>debug</key>",
             "range" : "{0, 5}",
-            "line" : 52,
+            "line_number" : 52,
             "found_word" : "debug"
           }
         ],
