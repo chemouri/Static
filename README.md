@@ -20,6 +20,11 @@ required arguments:
 -output $PATH        the $PATH output where the JSON file is written.
 ```
 
+Add more
+----------
+- You can add more rules to the [RulesEngine](https://github.com/evilpenguin/Static/tree/main/Static/Static/RuleEngine)
+- Update the words in the [RuleWord](https://github.com/evilpenguin/Static/blob/main/Static/Static/RuleEngine/Rules/RuleWord.m#L75)
+
 Output
 ----------
 ```
