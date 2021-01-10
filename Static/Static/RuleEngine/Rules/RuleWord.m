@@ -13,6 +13,8 @@
 
 @implementation RuleWord
 
+#pragma mark - Public
+
 - (NSArray<ArtifactWord *> *) checkStringForIssues:(NSString *)string {
     NSMutableArray *containsWords = nil;
     
@@ -114,7 +116,9 @@
                   @"sketch",
                   @"md",
                   @"aspx",
-                  @"cs"];
+                  @"cs",
+                  @"html",
+                  @"js"];
     });
     
     return array;

@@ -12,7 +12,7 @@
 
 #pragma mark - NSArray (Static)
 
-- (NSArray<NSDictionary *> *) dictionary {
+- (NSArray<NSDictionary *> *) arrayDictionary {
     NSMutableArray<NSDictionary *> *array = [NSMutableArray arrayWithCapacity:self.count];
     
     for (id<Artifact> artifact in self) {

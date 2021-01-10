@@ -31,6 +31,8 @@
 		A9791BE025A7D83C0090D0E2 /* Outputter.m in Sources */ = {isa = PBXBuildFile; fileRef = A9791BDF25A7D83C0090D0E2 /* Outputter.m */; };
 		A9791BF725A7DA630090D0E2 /* NSArray+Static.m in Sources */ = {isa = PBXBuildFile; fileRef = A9791BF525A7DA630090D0E2 /* NSArray+Static.m */; };
 		A9791C0225A7E1950090D0E2 /* ToolApktool.m in Sources */ = {isa = PBXBuildFile; fileRef = A9791C0125A7E1950090D0E2 /* ToolApktool.m */; };
+		A9791C0825A8D0C70090D0E2 /* RuleMacho.m in Sources */ = {isa = PBXBuildFile; fileRef = A9791C0725A8D0C70090D0E2 /* RuleMacho.m */; };
+		A9791C0C25A8D1620090D0E2 /* ArtifactMacho.m in Sources */ = {isa = PBXBuildFile; fileRef = A9791C0B25A8D1620090D0E2 /* ArtifactMacho.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -99,6 +101,10 @@
 		A9791C0025A7E1950090D0E2 /* ToolApktool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolApktool.h; sourceTree = "<group>"; };
 		A9791C0125A7E1950090D0E2 /* ToolApktool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolApktool.m; sourceTree = "<group>"; };
 		A9791C0425A7E5740090D0E2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		A9791C0625A8D0C70090D0E2 /* RuleMacho.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuleMacho.h; sourceTree = "<group>"; };
+		A9791C0725A8D0C70090D0E2 /* RuleMacho.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuleMacho.m; sourceTree = "<group>"; };
+		A9791C0A25A8D1620090D0E2 /* ArtifactMacho.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtifactMacho.h; sourceTree = "<group>"; };
+		A9791C0B25A8D1620090D0E2 /* ArtifactMacho.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtifactMacho.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +264,8 @@
 				A9791BC825A7BC1B0090D0E2 /* Rule.h */,
 				A9791BCE25A7BC710090D0E2 /* RuleWord.h */,
 				A9791BCF25A7BC710090D0E2 /* RuleWord.m */,
+				A9791C0625A8D0C70090D0E2 /* RuleMacho.h */,
+				A9791C0725A8D0C70090D0E2 /* RuleMacho.m */,
 			);
 			path = Rules;
 			sourceTree = "<group>";
@@ -270,6 +278,8 @@
 				A9791BD425A7BCB30090D0E2 /* ArtifactFile.m */,
 				A9791BD825A7BF500090D0E2 /* ArtifactWord.h */,
 				A9791BD925A7BF500090D0E2 /* ArtifactWord.m */,
+				A9791C0A25A8D1620090D0E2 /* ArtifactMacho.h */,
+				A9791C0B25A8D1620090D0E2 /* ArtifactMacho.m */,
 			);
 			path = Artifacts;
 			sourceTree = "<group>";
@@ -343,7 +353,9 @@
 				A9791B5925A78B0E0090D0E2 /* main.m in Sources */,
 				A9791BA725A79D430090D0E2 /* NSTask+Static.m in Sources */,
 				A9791BF725A7DA630090D0E2 /* NSArray+Static.m in Sources */,
+				A9791C0C25A8D1620090D0E2 /* ArtifactMacho.m in Sources */,
 				A9791B6725A78BD60090D0E2 /* Arguments.m in Sources */,
+				A9791C0825A8D0C70090D0E2 /* RuleMacho.m in Sources */,
 				A9791B7A25A7923B0090D0E2 /* FileExplorer.m in Sources */,
 				A9791BB125A79FC40090D0E2 /* ExternalTools.m in Sources */,
 				A9791BC525A7B58C0090D0E2 /* ToolPlutil.m in Sources */,

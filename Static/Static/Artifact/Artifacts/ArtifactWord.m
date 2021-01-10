@@ -6,6 +6,12 @@
 
 #import "ArtifactWord.h"
 
+static NSString *ArtifactWordLineKey        = @"line";
+static NSString *ArtifactWordCalloutKey     = @"callout";
+static NSString *ArtifactWordFoundWorkKey   = @"found_word";
+static NSString *ArtifactWordRangeKey       = @"range";
+static NSString *ArtifactWordLineNumberKey  = @"line_number";
+
 @implementation ArtifactWord
 
 #pragma mark - ArtifactWord
@@ -21,23 +27,22 @@
 
 + (id<Artifact>) artifactFromDictionary:(NSDictionary<NSString *,id> *)dictionary {
     ArtifactWord *artifact = [[ArtifactWord alloc] init];
-    artifact.line = dictionary[@""];
-    artifact.callout = dictionary[@""];
-    artifact.foundWord = dictionary[@""];
-    artifact.range = dictionary[@""];
-    artifact.line = dictionary[@""];
+    artifact.line = dictionary[ArtifactWordLineKey];
+    artifact.callout = dictionary[ArtifactWordCalloutKey];
+    artifact.foundWord = dictionary[ArtifactWordFoundWorkKey];
+    artifact.range = dictionary[ArtifactWordRangeKey];
+    artifact.lineNumber = dictionary[ArtifactWordLineNumberKey];
     
     return artifact;
 }
 
 - (NSDictionary<NSString *,id> *)dictionary {
     NSMutableDictionary<NSString *, id> *dictionary = [NSMutableDictionary dictionary];
-    dictionary[@"line"] = self.line;
-    dictionary[@"callout"] = self.callout;
-    dictionary[@"found_word"] = self.foundWord;
-    dictionary[@"range"] = self.range;
-    dictionary[@"line"] = self.line;
-    dictionary[@"line_number"] = self.lineNumber;
+    dictionary[ArtifactWordLineKey] = self.line;
+    dictionary[ArtifactWordCalloutKey] = self.callout;
+    dictionary[ArtifactWordFoundWorkKey] = self.foundWord;
+    dictionary[ArtifactWordRangeKey] = self.range;
+    dictionary[ArtifactWordLineNumberKey] = self.lineNumber;
     
     return dictionary; // should be a copy shhh :)
 }

@@ -8,6 +8,9 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+// Helper
+#import "FileExplorer.h"
+
 // Defines
 #import "Defines.h"
 

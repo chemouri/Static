@@ -52,11 +52,11 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "-path &quot;&quot;"
+            argument = "-path &quot;/Users/evilpenguin/Downloads/Amazon Music.ipa&quot;"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "-output &quot;&quot;"
+            argument = "-output &quot;/Users/evilpenguin/Downloads/music.json&quot;"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

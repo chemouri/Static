@@ -19,9 +19,9 @@
     output[@"package"] = package.dictionary;
     
     // Artifacts
-    NSArray<NSDictionary *> *dictionary = container.artifacts.dictionary;
+    NSArray<NSDictionary *> *dictionary = container.artifacts.arrayDictionary;
     if (dictionary.count > 0) {
-        output[@"artifacts"] = dictionary;
+        output[@"files"] = dictionary;
     }
     
     NSError *error = nil;

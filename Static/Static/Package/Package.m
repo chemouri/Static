@@ -94,9 +94,9 @@ static NSString *PackageHashKey     = @"package_hash";
 
 - (NSDictionary<NSString *,id> *)dictionary {
     NSMutableDictionary<NSString *, id> *dictionary = [NSMutableDictionary dictionary];
-    dictionary[@"path"] = self.path;
-    dictionary[@"dir_path"] = self.directoryPath;
-    dictionary[@"packageHash"] = self.packageHash;
+    dictionary[PackagePathKey] = self.path;
+    dictionary[PackageDirPathKey] = self.directoryPath;
+    dictionary[PackageHashKey] = self.packageHash;
 
     return dictionary; // should be a copy shhh :)
 }

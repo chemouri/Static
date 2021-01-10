@@ -7,9 +7,11 @@
 
 #import "RuleEngine.h"
 #import "RuleWord.h"
+#import "RuleMacho.h"
 
 #import "ArtifactWord.h"
 #import "ArtifactFile.h"
+#import "ArtifactMacho.h"
 
 @interface RuleEngine()
 @property (nonatomic, strong) RuleWord *wordRule;
@@ -37,13 +39,21 @@
     // Check file
     NSArray<ArtifactWord *> *file = [self.wordRule checkDataForIssues:data];
     
+    // Check for mach-o
+    ArtifactMacho *macho = nil;
+    if ([FileExplorer isFileMacho:data.bytes length:data.length]) {
+        macho = [RuleMacho checkMachoForArtifacts:data.bytes length:data.length wordRule:self.wordRule];
+    }
+    
     // Artifact
     ArtifactFile *artifact = nil;
-    if (path.count || file.count) {
+    if (path.count || file.count || macho) {
         artifact = [[ArtifactFile alloc] init];
         artifact.path = filePath;
         artifact.fileName = filePath.lastPathComponent;
+        artifact.extension = filePath.pathExtension;
         artifact.fileHash = [data sha256String];
+        artifact.macho = macho;
         
         NSMutableArray *words = file.mutableCopy;
         [words addObjectsFromArray:path];
@@ -51,8 +61,6 @@
     }
     
     return artifact;
-    
-    
 }
 
 #pragma mark - Getters

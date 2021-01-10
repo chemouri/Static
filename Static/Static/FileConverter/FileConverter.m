@@ -12,8 +12,10 @@
 #pragma mark - FileConverter
 
 + (BOOL) convertFileAtPath:(NSString *)path withData:(NSData *)data {
+    if (data.length == 0) return NO;
+    
     // Plist
-    BOOL isPlist = memcmp(data.bytes, "bplist", 6) == 0;
+    BOOL isPlist = [FileExplorer isFilePlist:data.bytes length:data.length];
     if (isPlist) [self _convertPlistToXmlAtPath:path];
     
     return isPlist;

@@ -10,6 +10,7 @@
 #import "Artifact.h"
 #import "ArtifactFile.h"
 #import "ArtifactWord.h"
+#import "ArtifactMacho.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

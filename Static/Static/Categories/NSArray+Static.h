@@ -10,7 +10,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSArray (Static)
 
-- (NSArray<NSDictionary *> *__nullable) dictionary;
+- (NSArray<NSDictionary *> *__nullable) arrayDictionary;
 
 @end
 
