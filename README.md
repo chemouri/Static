@@ -38,6 +38,21 @@ JSON Output
   "artifacts" : [
       {
         "path" : "Payload/App.app/SomeFile.strings",
+        "macho" : {
+          "pie" : false,
+          "words" : [
+            {
+              "line" : "somefile.mm",
+              "found_word" : "mm"
+            }
+          ],
+          "libraries" : [
+            "@rpath\/SomeFramework.framework\/SomeFramework",
+            "\/System\/Library\/Frameworks\/Foundation.framework\/Foundation",
+            "\/usr\/lib\/libobjc.A.dylib",
+            "\/usr\/lib\/libSystem.B.dylib",
+            "\/System\/Library\/Frameworks\/CoreFoundation.framework\/CoreFoundation"
+          ]
         "words" : [
           {
             "line" : "<key>debug</key>",
